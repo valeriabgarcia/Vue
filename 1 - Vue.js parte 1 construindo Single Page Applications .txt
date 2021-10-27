@@ -1,3 +1,4 @@
+.
 https://cursos.alura.com.br/formacao-vuejs
 https://cursos.alura.com.br/course/vue-parte1
 
