@@ -1,0 +1,109 @@
+https://cursos.alura.com.br/formacao-vuejs
+https://cursos.alura.com.br/course/vue-parte1
+
+
+**** em um novo terminal entrar na pasta api -> npm start ****
+**** em um novo terminal entrar na pasta alurapic -> npm run dev ****
+
+
+Precisa da plataforma Node.js instalada
+No VSCode, views -> extension -> Digite vue e escolha a opção vue do Liujim-jim (sintaxe highlight)
+O Vue possui um CLI (command line interface) que nada mais é do que uma ferramenta que automatiza a construção da infraestrutura do projeto
+	No terminal -> npm install -g vue-cli@2.7.0
+
+https://social.technet.microsoft.com/wiki/pt-br/contents/articles/35641.windows-10-permitir-a-execucao-de-scripts-no-powershell.aspx
+
+Criando Novo projeto a partir de um template:
+no terminal -> vue init webpack-simple alurapic
+	cd alurapic 
+	npm install
+	npm run dev
+
+*************************************************************************************************************************************
+1 - BEM COMEÇADO, METADE FEITO 
+estrutura de um template
+relação entre index.html, main.js e App.vue
+como a renderização de um template é feita
+data binding unidirecional através de interpolação
+o mecanismo de live reloading
+------------------
+instalar e utilizar o Vue CLI
+criar do zero um novo projeto
+estrutura fundamental do projeto
+arquivos de template .vue
+	template
+	script
+	style
+
+*************************************************************************************************************************************
+2 - ADEQUANDO O TEMPLATE GERADO
+data binding unidirecional em atributos através da diretiva v-bind
+atalho para v-bind
+a diretiva v-for
+--------------
+se tivermos mais de um elemento dentro da tag template eles devem vir dentro de um elemento raiz (root), por exemplo, uma div
+
+*************************************************************************************************************************************
+3 - INTEGRAÇÃO COM API DE TERCEIROS
+a subir uma API para ser consumida pela nossa aplicação
+a entender a separação entre cliente e API
+a baixar e registrar o módulo VueResource 
+o suporte à lifecycle hooks que todo componente possui
+que recursos no global view object ficam disponíveis para todas as outras view
+consumir uma API através de $http
+o conceito de promise
+enxergar ainda melhor o poder do data binding
+-----------
+Download da API do projeto
+	Baixar a pasta de api -> **** no terminal entrar na pasta api -> npm start ****
+O módulo VueResource: instalação e registro
+	Em um novo terminal -> entrar na pasta alurapic -> npm install vue-resource@1.0.3 --save
+	(https://cursos.alura.com.br/forum/topico-could-not-find-a-declaration-file-usei-a-versao-certa-157858)
+
+*************************************************************************************************************************************
+4 - CRIANDO COMPONENTES E ENCAPSULAMENTO DE VIEW
+a estilizar um componente
+boa prática na organização do projeto
+a criar um componente reutilizável
+como passar parâmetro para um componente (comunicação)
+o conceito de slot e preservação de conteúdo
+importação de um componente em outro
+a definir e delimitar o escopo de estilos ao componente no qual foram declarados
+-----------
+
+*************************************************************************************************************************************
+5 - MELHORANDO A UX COM ANIMAÇÕES
+a diretiva v-on e como lidar com eventos do JavaScript
+atalho para diretiva v-on
+diferença de v-on para v-bind
+a filtrar uma lista
+compreender o uso de computed property
+que podemos acessar qualquer propriedade de data através de this
+a diretiva v-show
+detalhe entre v-show e slots
+como realizar transições com auxílio do componente transition
+a criar mais um componente
+
+*************************************************************************************************************************************
+6 - SINGLE PAGE APPLICATION E CRIAÇÃO DE ROTAS
+a criar um novo componente/página
+o conceito de Single Page Application
+extrair de App.vue um componente de página, separando responsabilidades
+a baixar e registrar o módulo VueRouter
+	No terminal, dentro da pasta alurapic e com o CLI parado, vamos baixar o módulo com o comando:
+	npm install vue-router@2.1.1 --save   **************
+criar rotas da aplicação
+o componente router-view
+o modo history vs hash
+a criar um menu baseado em nossas configurações de rota
+a tornar o menu um componente
+executar efeito de transição na troca de páginas
+a validar propriedades em um componente
+
+*************************************************************************************************************************************
+7 - UM POUCO MAIS SOBRE COMPONENTES
+a criar um novo componente reutilizável
+a criar nossos próprios eventos
+a aplicar classes condicionalmente
+a diferença do valor passado para a propriedade de um componente sem bind e com bind
+a validar propriedades de componentes
